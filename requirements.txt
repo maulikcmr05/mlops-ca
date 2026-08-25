@@ -1,0 +1,6 @@
+streamlit
+scikit-learn
+numpy
+scipy
+joblib
+threadpoolctl
