@@ -14,7 +14,7 @@ accuracy = model.score(x_test, y_test)
 st.set_page_config(
     page_title="Iris Flower Classifier",
     page_icon="*",
-    layout="wide",
+    layout="centered"
 )
 
 st.title("Flower Speces classifier")
