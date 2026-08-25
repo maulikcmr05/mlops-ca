@@ -64,4 +64,4 @@ if st.button("Predict"):
         })
     st.progress(float(max(probability[0])))
 st.divider()
-st.caption("Devloped Streamlit")
+st.caption("Devloped Streamlit.")
