@@ -19,7 +19,7 @@ st.set_page_config(
 
 st.title("Flower Speces classifier")
 st.write("Enter Flower measurements to predict the data")
-st.write(f"Accuracy: {accuracy}")
+st.write(f"Accuracy: {accuracy:.2f}")
 
 st.divider()
 
