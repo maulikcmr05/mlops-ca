@@ -23,10 +23,34 @@ st.write(f"Accuracy: {accuracy}")
 
 st.divider()
 
-sepal_height=st.number_input("sepal height (cm)"),min_value=0.0,max_value=10.0,value=5.1
-sepal_width=st.number_input("sepal height (cm)"),min_value=0.0,max_value=10.0,value=3.4
-petal_height=st.number_input("Enter the petal height"),min_value=0.0,max_value=10.0,value=1.4
-petal_width=st.number_input("Enter the petal width"),min_value=0.0,max_value=10.0,value=0.2
+sepal_height = st.number_input(
+    "Sepal Height (cm)",
+    min_value=0.0,
+    max_value=10.0,
+    value=5.1
+)
+
+sepal_width = st.number_input(
+    "Sepal Width (cm)",
+    min_value=0.0,
+    max_value=10.0,
+    value=3.5
+)
+
+petal_height = st.number_input(
+    "Petal Height (cm)",
+    min_value=0.0,
+    max_value=10.0,
+    value=1.4
+)
+
+petal_width = st.number_input(
+    "Petal Width (cm)",
+    min_value=0.0,
+    max_value=10.0,
+    value=0.2
+)
+
 
 if st.button("Predict"):
     prediction = model.predict([[sepal_height, sepal_width, petal_height, petal_width]])
